@@ -38,6 +38,8 @@ public class ProcedureStyleContextListener implements ServletContextListener {
 		semanticCMS.addCssLink("/pragmatickm-procedure-style/styles.css");
 		// Add link CSS class
 		semanticCMS.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
+		// Add list item CSS class
+		semanticCMS.addListItemCssClass(Procedure.class, "pragmatickm-procedure-list-item");
 	}
 
 	@Override
