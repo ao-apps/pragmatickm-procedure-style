@@ -3,6 +3,7 @@ Default style for procedures nested within [SemanticCMS](https://semanticcms.com
 
 ## Project Links
 * [Project Home](https://pragmatickm.com/procedure/style/)
+* [Changelog](https://pragmatickm.com/procedure/style/changelog)
 * [API Docs](https://pragmatickm.com/procedure/style/apidocs/)
 * [Maven Repository](scpexe://private.cvs.aoindustries.com/var/maven2/pragmatickm)
 * [Git](ssh://private.cvs.aoindustries.com/var/git/pragmatickm-procedure-style)
