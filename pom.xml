@@ -34,13 +34,12 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	<packaging>jar</packaging>
 
 	<properties>
-		<bookPath>/procedure/style</bookPath>
 		<shortTitle>Style</shortTitle>
 		<description.html><![CDATA[Default style for procedures nested within <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages and elements.]]></description.html>
 	</properties>
 
 	<name>PragmaticKM Procedure Style</name>
-	<url>https://pragmatickm.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
+	<url>https://pragmatickm.com/procedure/style/</url>
 	<description>Default style for procedures nested within SemanticCMS pages and elements.</description>
 	<inceptionYear>2013</inceptionYear>
 
