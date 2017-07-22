@@ -5,8 +5,8 @@ Default style for procedures nested within [SemanticCMS](https://semanticcms.com
 * [Project Home](https://pragmatickm.com/procedure/style/)
 * [Changelog](https://pragmatickm.com/procedure/style/changelog)
 * [API Docs](https://pragmatickm.com/procedure/style/apidocs/)
-* [Maven Repository](scpexe://private.cvs.aoindustries.com/var/maven2/pragmatickm)
-* [Git](ssh://private.cvs.aoindustries.com/var/git/pragmatickm-procedure-style)
+* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.pragmatickm%22%20AND%20a:%22pragmatickm-procedure-style%22)
+* [GitHub](https://github.com/aoindustries/pragmatickm-procedure-style)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
