@@ -1,6 +1,6 @@
 /*
  * pragmatickm-procedure-style - Default style for procedures nested within SemanticCMS pages and elements.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -23,23 +23,23 @@
 package com.pragmatickm.procedure.style;
 
 import com.pragmatickm.procedure.model.Procedure;
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for procedures in SemanticCMS.")
+@WebListener("Registers the styles for procedures in HtmlRenderer.")
 public class ProcedureStyleContextListener implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
 		// Add our CSS file
-		semanticCMS.addCssLink("/pragmatickm-procedure-style/styles.css");
+		htmlRenderer.addCssLink("/pragmatickm-procedure-style/styles.css");
 		// Add link CSS class
-		semanticCMS.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
+		htmlRenderer.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
 		// Add list item CSS class
-		semanticCMS.addListItemCssClass(Procedure.class, "pragmatickm-procedure-list-item");
+		htmlRenderer.addListItemCssClass(Procedure.class, "pragmatickm-procedure-list-item");
 	}
 
 	@Override
