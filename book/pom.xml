@@ -37,7 +37,7 @@ along with pragmatickm-procedure-style.  If not, see <http://www.gnu.org/license
 		<documented.groupId>com.pragmatickm</documented.groupId><documented.artifactId>pragmatickm-procedure-style</documented.artifactId>
 		<documented.javaVersion>1.7</documented.javaVersion>
 		<documented.javac.link.javaApi>${javac.link.javaApi.jdk7}</documented.javac.link.javaApi>
-		<documented.name>PragmaticKM 1 Procedure Style</documented.name>
+		<documented.name>PragmaticKM Procedure Style</documented.name>
 		<documented.shortTitle>Style</documented.shortTitle>
 		<documented.url>https://pragmatickm.com/procedure/style/</documented.url>
 		<documented.description>Default style for procedures nested within SemanticCMS pages and elements.</documented.description>
