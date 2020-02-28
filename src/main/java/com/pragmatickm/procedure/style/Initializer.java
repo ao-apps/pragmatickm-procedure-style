@@ -35,7 +35,7 @@ public class Initializer implements ServletContextListener {
 	public void contextInitialized(ServletContextEvent event) {
 		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
 		// Add our CSS file
-		semanticCMS.addCssLink("/pragmatickm-procedure-style/styles.css");
+		semanticCMS.addCssLink("/pragmatickm-procedure-style/pragmatickm-procedure.css");
 		// Add link CSS class
 		semanticCMS.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
 		// Add list item CSS class
