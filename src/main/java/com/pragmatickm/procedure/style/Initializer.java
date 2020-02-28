@@ -35,7 +35,7 @@ public class Initializer implements ServletContextListener {
 	public void contextInitialized(ServletContextEvent event) {
 		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
 		// Add our CSS file
-		htmlRenderer.addCssLink("/pragmatickm-procedure-style/styles.css");
+		htmlRenderer.addCssLink("/pragmatickm-procedure-style/pragmatickm-procedure.css");
 		// Add link CSS class
 		htmlRenderer.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
 		// Add list item CSS class
