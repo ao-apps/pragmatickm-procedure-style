@@ -20,29 +20,11 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with pragmatickm-procedure-style.  If not, see <http://www.gnu.org/licenses/>.
  */
-span.pragmatickm-procedure-procedure-link,
-a.pragmatickm-procedure-procedure-link {
-	display: inline-block;
-	background-repeat: no-repeat;
-	background-position: left center;
-	padding-left: 25px;
-	min-height: 24px;
-	background-size: 24px 24px;
-	/* TODO: Find properly licensed images and include them in this styles package */
-	background-image: url(../docs-taglib/images/procedure.png);
-}
-li.pragmatickm-procedure-list-item {
-	/* TODO: Find properly licensed images and include them in this styles package */
-	list-style-image: url('../docs-taglib/images/list-item/16x16/procedure.png');
-}
-
 :not(li) > table.pragmatickm-procedure {
 	float:left;
 	margin-right: 1em;
 }
 table.pragmatickm-procedure {
 	margin-bottom: 1em;
-}
-table.pragmatickm-procedure {
 	width: 340px;
 }
