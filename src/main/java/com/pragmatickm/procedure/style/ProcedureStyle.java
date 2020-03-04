@@ -22,20 +22,28 @@
  */
 package com.pragmatickm.procedure.style;
 
+import com.aoindustries.web.resources.registry.Style;
+import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.pragmatickm.procedure.model.Procedure;
 import com.semanticcms.core.renderer.html.HtmlRenderer;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for procedures in HtmlRenderer.")
-public class Initializer implements ServletContextListener {
+@WebListener("Registers the styles for procedures in RegistryEE and HtmlRenderer.")
+public class ProcedureStyle implements ServletContextListener {
+
+	public static final Style PRAGMATICKM_PROCEDURE = new Style("/pragmatickm-procedure-style/pragmatickm-procedure.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
+		ServletContext servletContext = event.getServletContext();
+
 		// Add our CSS file
-		htmlRenderer.addCssLink("/pragmatickm-procedure-style/pragmatickm-procedure.css");
+		RegistryEE.get(servletContext).global.styles.add(PRAGMATICKM_PROCEDURE);
+
+		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(servletContext);
 		// Add link CSS class
 		htmlRenderer.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
 		// Add list item CSS class
