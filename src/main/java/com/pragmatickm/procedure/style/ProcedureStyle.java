@@ -22,6 +22,7 @@
  */
 package com.pragmatickm.procedure.style;
 
+import com.aoindustries.web.resources.registry.Group;
 import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.pragmatickm.procedure.model.Procedure;
@@ -34,6 +35,9 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for procedures in RegistryEE and HtmlRenderer.")
 public class ProcedureStyle implements ServletContextListener {
 
+	public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-procedure-style");
+
+	// TODO: Change to Group.Name once we have group-level ordering
 	public static final Style PRAGMATICKM_PROCEDURE = new Style("/pragmatickm-procedure-style/pragmatickm-procedure.css");
 
 	@Override
@@ -41,7 +45,11 @@ public class ProcedureStyle implements ServletContextListener {
 		ServletContext servletContext = event.getServletContext();
 
 		// Add our CSS file
-		RegistryEE.get(servletContext).global.styles.add(PRAGMATICKM_PROCEDURE);
+		RegistryEE.Application.get(servletContext)
+			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
+			.getGroup(RESOURCE_GROUP)
+			.styles
+			.add(PRAGMATICKM_PROCEDURE);
 
 		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(servletContext);
 		// Add link CSS class
