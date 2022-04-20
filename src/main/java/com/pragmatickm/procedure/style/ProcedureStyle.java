@@ -36,31 +36,31 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for procedures in RegistryEE and SemanticCMS.")
 public class ProcedureStyle implements ServletContextListener {
 
-	public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-procedure-style");
+  public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-procedure-style");
 
-	// TODO: Change to Group.Name once we have group-level ordering
-	public static final Style PRAGMATICKM_PROCEDURE = new Style("/pragmatickm-procedure-style/pragmatickm-procedure.css");
+  // TODO: Change to Group.Name once we have group-level ordering
+  public static final Style PRAGMATICKM_PROCEDURE = new Style("/pragmatickm-procedure-style/pragmatickm-procedure.css");
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		ServletContext servletContext = event.getServletContext();
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    ServletContext servletContext = event.getServletContext();
 
-		// Add our CSS file
-		RegistryEE.Application.get(servletContext)
-			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
-			.getGroup(RESOURCE_GROUP)
-			.styles
-			.add(PRAGMATICKM_PROCEDURE);
+    // Add our CSS file
+    RegistryEE.Application.get(servletContext)
+      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+      .getGroup(RESOURCE_GROUP)
+      .styles
+      .add(PRAGMATICKM_PROCEDURE);
 
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
-		// Add link CSS class
-		semanticCMS.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
-		// Add list item CSS class
-		semanticCMS.addListItemCssClass(Procedure.class, "pragmatickm-procedure-list-item");
-	}
+    SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
+    // Add link CSS class
+    semanticCMS.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
+    // Add list item CSS class
+    semanticCMS.addListItemCssClass(Procedure.class, "pragmatickm-procedure-list-item");
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }
