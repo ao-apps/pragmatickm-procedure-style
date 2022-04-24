@@ -47,10 +47,10 @@ public class ProcedureStyle implements ServletContextListener {
 
     // Add our CSS file
     RegistryEE.Application.get(servletContext)
-      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
-      .getGroup(RESOURCE_GROUP)
-      .styles
-      .add(PRAGMATICKM_PROCEDURE);
+        .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+        .getGroup(RESOURCE_GROUP)
+        .styles
+        .add(PRAGMATICKM_PROCEDURE);
 
     SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
     // Add link CSS class
