@@ -33,6 +33,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Registers the styles for procedures in {@link RegistryEE} and {@link SemanticCMS}.
+ */
 @WebListener("Registers the styles for procedures in RegistryEE and SemanticCMS.")
 public class ProcedureStyle implements ServletContextListener {
 
@@ -49,14 +52,14 @@ public class ProcedureStyle implements ServletContextListener {
     RegistryEE.Application.get(servletContext)
         .activate(RESOURCE_GROUP)// TODO: Activate as-needed
         .getGroup(RESOURCE_GROUP)
-        .styles
-        .add(PRAGMATICKM_PROCEDURE);
+            .styles
+            .add(PRAGMATICKM_PROCEDURE);
 
-    SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
+    SemanticCMS semanticCms = SemanticCMS.getInstance(servletContext);
     // Add link CSS class
-    semanticCMS.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
+    semanticCms.addLinkCssClass(Procedure.class, "pragmatickm-procedure-procedure-link");
     // Add list item CSS class
-    semanticCMS.addListItemCssClass(Procedure.class, "pragmatickm-procedure-list-item");
+    semanticCms.addListItemCssClass(Procedure.class, "pragmatickm-procedure-list-item");
   }
 
   @Override
