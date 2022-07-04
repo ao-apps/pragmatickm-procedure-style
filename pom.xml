@@ -46,7 +46,7 @@ along with pragmatickm-procedure-style.  If not, see <https://www.gnu.org/licens
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
 
-  <name>PragmaticKM Procedure Style²</name>
+  <name>PragmaticKM Procedure Style</name>
   <url>https://pragmatickm.com/procedure/style/</url>
   <description>Default style for procedures nested within SemanticCMS pages and elements.</description>
   <inceptionYear>2013</inceptionYear>

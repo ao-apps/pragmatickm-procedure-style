@@ -36,15 +36,15 @@ along with pragmatickm-procedure-style.  If not, see <https://www.gnu.org/licens
     <module.name>com.pragmatickm.procedure.style.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>pragmatickm-procedure-style</documented.artifactId>
-    <documented.name>PragmaticKM Procedure Style²</documented.name>
+    <documented.name>PragmaticKM Procedure Style</documented.name>
     <documented.description>Default style for procedures nested within SemanticCMS pages and elements.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>PragmaticKM Procedure Style² Book</name>
+  <name>PragmaticKM Procedure Style Book</name>
   <url>https://pragmatickm.com/procedure/style/</url>
-  <description>Documentation for PragmaticKM Procedure Style² in SemanticCMS format.</description>
+  <description>Documentation for PragmaticKM Procedure Style in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>
