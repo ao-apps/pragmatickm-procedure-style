@@ -41,6 +41,9 @@ along with pragmatickm-procedure-style.  If not, see <https://www.gnu.org/licens
     <documented.artifactId>pragmatickm-procedure-style</documented.artifactId>
     <documented.name>PragmaticKM Procedure Style</documented.name>
     <documented.description>Default style for procedures nested within SemanticCMS pages and elements.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://pragmatickm.com/">PragmaticKM</a>
+/ <a target="${javadoc.target}" href="https://pragmatickm.com/procedure/">Procedure</a>
+/ <a target="${javadoc.target}" href="${project.url}">Style</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
