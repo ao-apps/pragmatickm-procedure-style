@@ -23,7 +23,7 @@ Default style for procedures nested within [SemanticCMS](https://github.com/ao-a
 * [Project Home](https://pragmatickm.com/procedure/style/)
 * [Changelog](https://pragmatickm.com/procedure/style/changelog)
 * [API Docs](https://pragmatickm.com/procedure/style/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.pragmatickm/pragmatickm-procedure-style)
+* [Central Repository](https://central.sonatype.com/artifact/com.pragmatickm/pragmatickm-procedure-style)
 * [GitHub](https://github.com/ao-apps/pragmatickm-procedure-style)
 
 ## Contact Us
